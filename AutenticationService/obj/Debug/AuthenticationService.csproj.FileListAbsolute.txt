@@ -1,0 +1,9 @@
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\AutenticationService\bin\Debug\AutenticationService.exe
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\AutenticationService\bin\Debug\AutenticationService.pdb
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\AutenticationService\bin\Debug\Common.dll
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\AutenticationService\bin\Debug\Common.pdb
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\AutenticationService\obj\Debug\AuthenticationService.csproj.AssemblyReference.cache
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\AutenticationService\obj\Debug\AuthenticationService.csproj.CoreCompileInputs.cache
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\AutenticationService\obj\Debug\AuthenticationService.csproj.CopyComplete
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\AutenticationService\obj\Debug\AutenticationService.exe
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\AutenticationService\obj\Debug\AutenticationService.pdb

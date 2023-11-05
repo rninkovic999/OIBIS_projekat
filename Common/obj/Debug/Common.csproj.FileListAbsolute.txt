@@ -1,0 +1,6 @@
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\Common\bin\Debug\Common.dll
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\Common\bin\Debug\Common.pdb
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\Common\obj\Debug\Common.dll
+C:\Users\risto\Desktop\OIBIS_projekat-main\OIBIS_projekat-main\Common\obj\Debug\Common.pdb

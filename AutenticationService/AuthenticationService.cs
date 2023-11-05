@@ -3,6 +3,8 @@ using Common;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
+using System.ServiceModel;
 
 namespace AuthenticationService
 {
@@ -10,12 +12,26 @@ namespace AuthenticationService
     {
         public void Login(string username, string password)
         {
-            throw new NotImplementedException();
+            if (Thread.CurrentPrincipal.IsInRole(Groups.generalUsers))
+            {
+                Console.WriteLine($"{Thread.CurrentPrincipal.Identity.Name} is now logged in.");
+            }
+            else
+            {
+                throw new FaultException<InvalidGroupException>(new InvalidGroupException("Invalid Group permissions!!!\n"));
+            }
         }
 
         public void Logout()
         {
-            throw new NotImplementedException();
+            if (Thread.CurrentPrincipal.IsInRole(Groups.generalUsers))
+            {
+                Console.WriteLine($"{Thread.CurrentPrincipal.Identity.Name} is now logged out.");
+            }
+            else
+            {
+                throw new FaultException<InvalidGroupException>(new InvalidGroupException("Invalid Group permissions!!!\n"));
+            }
         }
     }
 }
