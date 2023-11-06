@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions\InvalidGroupException.cs" />
-    <Compile Include="Groups\Groups.cs" />
     <Compile Include="IAccountManagement.cs" />
     <Compile Include="IAuthenticationService.cs" />
     <Compile Include="IAuthenticationServiceManager.cs" />

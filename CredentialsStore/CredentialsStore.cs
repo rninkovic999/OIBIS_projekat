@@ -11,37 +11,34 @@ namespace CredentialsStore
     {
         public void CreateAccount(string username, string password)
         {
-            if (Thread.CurrentPrincipal.IsInRole("AccountAdmins")) { Console.WriteLine("Uspjelo!!!"); }
-            else
-                throw new NotImplementedException();
+            try
+            {
+                Console.WriteLine("Uspjelo dodavanje novog korisnika -" + username);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
 
         public void DeleteAccount(string username)
         {
-            if (Thread.CurrentPrincipal.IsInRole("AccountAdmins")) { }
-            else
-                throw new NotImplementedException();
+           throw new NotImplementedException();
         }
 
         public void DisableAccount(string username)
         {
-            if (Thread.CurrentPrincipal.IsInRole("AccountAdmins")) { }
-            else
-                throw new NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public void EnableAccount(string username)
         {
-            if (Thread.CurrentPrincipal.IsInRole("AccountAdmins")) { }
-            else
-                throw new NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public void LockAccount(string username)
         {
-            if (Thread.CurrentPrincipal.IsInRole("AccountAdmins")) { }
-            else
-                throw new NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }

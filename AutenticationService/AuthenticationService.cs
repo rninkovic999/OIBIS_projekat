@@ -12,26 +12,12 @@ namespace AuthenticationService
     {
         public void Login(string username, string password)
         {
-            if (Thread.CurrentPrincipal.IsInRole(Groups.generalUsers))
-            {
-                Console.WriteLine($"{Thread.CurrentPrincipal.Identity.Name} is now logged in.");
-            }
-            else
-            {
-                throw new FaultException<InvalidGroupException>(new InvalidGroupException("Invalid Group permissions!!!\n"));
-            }
+            throw new NotImplementedException();
         }
 
         public void Logout()
         {
-            if (Thread.CurrentPrincipal.IsInRole(Groups.generalUsers))
-            {
-                Console.WriteLine($"{Thread.CurrentPrincipal.Identity.Name} is now logged out.");
-            }
-            else
-            {
-                throw new FaultException<InvalidGroupException>(new InvalidGroupException("Invalid Group permissions!!!\n"));
-            }
+            throw new NotImplementedException();
         }
     }
 }
