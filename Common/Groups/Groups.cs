@@ -7,9 +7,7 @@ namespace Common
 {
     public class Groups
     {
-
-        public static string generalUsers = "AccountUsers";
-        public static string adminUsers = "AccountAdmins";
-
+        public static string generalUser = "AccountUsers";
+        public static string adminUser = "AccountAdmins";
     }
 }

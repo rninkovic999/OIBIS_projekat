@@ -20,30 +20,50 @@ namespace Client
             //WINDOWS AUTHENTICATION PROTOCOL INIT
 
             //Used for Anti-Phishing protection
-           
+            EndpointAddress authenticationServiceEndpointAddress = new EndpointAddress(new Uri(authenticationServiceAddress), EndpointIdentity.CreateUpnIdentity("authservice")); 
+            EndpointAddress credentialsStoreEndpointAddress = new EndpointAddress(new Uri(credentialsStoreAddress), EndpointIdentity.CreateUpnIdentity("credentialsstore"));
+
             binding.Security.Mode = SecurityMode.Message; //Safer but slower then SecurityMode.Transport as it encrypts each message separately
             binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows; //Based on windows user accounts
             binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign; //Anti-Tampering signature (per message) protection
 
+            Console.WriteLine($"Currently used by [{WindowsIdentity.GetCurrent().User}] -> " + WindowsIdentity.GetCurrent().Name + "\n");
 
-            using (AuthenticationProxy authenticationProxy = new AuthenticationProxy(binding, authenticationServiceAddress))
-            {
-
-            }
-
-            using (CredentialsStoreProxy credentialsStoreProxy = new CredentialsStoreProxy(binding, credentialsStoreAddress))
+            using (AuthenticationProxy authenticationProxy = new AuthenticationProxy(binding, authenticationServiceEndpointAddress)) 
             {
                 try
                 {
-                    credentialsStoreProxy.CreateAccount("marko", "marko");
+                    //CALL AS METHODS HERE
                 }
-                catch(Exception e)
+                catch (FaultException<InvalidGroupException> ex)
                 {
-                    Console.WriteLine(e);
+                    Console.WriteLine(ex.Detail.exceptionMessage);
+                    authenticationProxy.Abort(); //To avoid AS server faulted state
+                }
+                catch (MessageSecurityException)
+                {
+                    Console.WriteLine($"Server identity check failed, expected -> [authservice]. Please contact your system administrator.\n");
+                    authenticationProxy.Abort(); //To avoid AS server faulted state
                 }
             }
-            Console.WriteLine($"Currently used by [{WindowsIdentity.GetCurrent().User}] -> " + WindowsIdentity.GetCurrent().Name + "\n");
 
+            using (CredentialsStoreProxy credentialsStoreProxy = new CredentialsStoreProxy(binding, credentialsStoreEndpointAddress)) 
+            {
+                try
+                {
+                    //CALL CS METHODS HERE
+                }
+                catch (FaultException<InvalidGroupException> ex)
+                {
+                    Console.WriteLine(ex.Detail.exceptionMessage);
+                    credentialsStoreProxy.Abort(); //To avoid CS server faulted state
+                }
+                catch (MessageSecurityException)
+                {
+                    Console.WriteLine($"Server identity check failed, expected -> [credentialsstore]. Please contact your system administrator.\n");
+                    credentialsStoreProxy.Abort(); //To avoid CS server faulted state
+                }
+            }
 
             Console.ReadLine();
         }
