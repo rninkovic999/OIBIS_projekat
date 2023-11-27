@@ -26,6 +26,7 @@ namespace Client
             binding.Security.Mode = SecurityMode.Message; //Safer but slower then SecurityMode.Transport as it encrypts each message separately
             binding.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows; //Based on windows user accounts
             binding.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign; //Anti-Tampering signature (per message) protection
+            
 
             Console.WriteLine($"Currently used by [{WindowsIdentity.GetCurrent().User}] -> " + WindowsIdentity.GetCurrent().Name + "\n");
 
@@ -33,16 +34,17 @@ namespace Client
             {
                 try
                 {
-                    //CALL AS METHODS HERE
+                    //authenticationProxy.Login("aaa", "aaa");
                 }
                 catch (FaultException<InvalidGroupException> ex)
                 {
                     Console.WriteLine(ex.Detail.exceptionMessage);
                     authenticationProxy.Abort(); //To avoid AS server faulted state
                 }
-                catch (MessageSecurityException)
+                catch (MessageSecurityException e)
                 {
                     Console.WriteLine($"Server identity check failed, expected -> [authservice]. Please contact your system administrator.\n");
+                    Console.WriteLine(e);
                     authenticationProxy.Abort(); //To avoid AS server faulted state
                 }
             }
@@ -51,7 +53,7 @@ namespace Client
             {
                 try
                 {
-                    //CALL CS METHODS HERE
+                    //credentialsStoreProxy.CreateAccount("a", "a");
                 }
                 catch (FaultException<InvalidGroupException> ex)
                 {

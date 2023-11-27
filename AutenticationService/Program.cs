@@ -46,6 +46,7 @@ namespace AuthenticationService
                 try
                 {
                     credentialsStoreProxy.LockAccount("mmm");
+                    credentialsStoreProxy.EnableAccount("mmm");
                 }
                 catch (InvalidOperationException e)
                 {

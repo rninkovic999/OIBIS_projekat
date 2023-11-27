@@ -14,7 +14,7 @@ namespace AuthenticationService
         public void Login(string username, string password)
         {
             if (Thread.CurrentPrincipal.IsInRole(Groups.generalUser))
-                Console.WriteLine($"{Thread.CurrentPrincipal.Identity.Name} successfully logged in.\n");
+                Console.WriteLine(" successfully logged in.\n");
                 //TO IMPLEMENT
             else
                 throw new FaultException<InvalidGroupException>(new InvalidGroupException("Invalid Group permissions, please contact your system administrator if you think this is a mistake.\n"));

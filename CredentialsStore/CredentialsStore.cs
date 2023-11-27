@@ -11,9 +11,9 @@ namespace CredentialsStore
     {
         public void CreateAccount(string username, string password)
         {
-            if (Thread.CurrentPrincipal.IsInRole(Groups.adminUser)) { }
-            else
-                throw new NotImplementedException();
+            if (Thread.CurrentPrincipal.IsInRole(Groups.adminUser)) { Console.WriteLine("NE MOZE"); }
+            else { Console.WriteLine("Ne moze"); }
+                
         }
 
         public void DeleteAccount(string username)
@@ -32,9 +32,12 @@ namespace CredentialsStore
 
         public void EnableAccount(string username)
         {
-            if (Thread.CurrentPrincipal.IsInRole(Groups.adminUser)) { }
+            if (Thread.CurrentPrincipal.IsInRole(Groups.generalUser)) { Console.WriteLine("RADI"); }
             else
-                throw new NotImplementedException();
+            {
+                throw new InvalidGroupException("AAAAAAAAAAA");
+            }
+                
         }
 
         public void LockAccount(string username)

@@ -17,7 +17,14 @@ namespace CredentialsStore
 
         public void EnableAccount(string username)
         {
-            Console.WriteLine("Account enabled.\n");
+            if (Thread.CurrentPrincipal.IsInRole(Groups.generalUser))
+            {
+                Console.WriteLine("Account enabled.\n");
+            }
+            else
+            {
+                Console.WriteLine("Nije dobra grupa!!!");
+            }
             //TO IMPLEMENT
         }
 

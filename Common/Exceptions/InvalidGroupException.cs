@@ -7,7 +7,7 @@ using System.Text;
 namespace Common
 {
     [DataContract]
-    public class InvalidGroupException
+    public class InvalidGroupException : System.Exception 
     {
         [DataMember]
         public string exceptionMessage;
