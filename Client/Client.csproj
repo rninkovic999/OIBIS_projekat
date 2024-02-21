@@ -4,12 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A14DB0D-7852-4EFC-9E41-FE58EC06FE64}</ProjectGuid>
+    <ProjectGuid>{DA467487-15B1-45B0-86DD-D8893CE5B459}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Client</RootNamespace>
     <AssemblyName>Client</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -35,11 +36,11 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -49,8 +50,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AuthenticationService\AuthenticationService.csproj">
+      <Project>{DA8DD9A6-4D94-4BB8-AF38-D4DF5AC87D04}</Project>
+      <Name>AuthenticationService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{e4c6e635-a017-466d-b960-4229e6443906}</Project>
+      <Project>{D0CA42C4-EE0B-4FD8-8AA6-FA9D3772D467}</Project>
       <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>

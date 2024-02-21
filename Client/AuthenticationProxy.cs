@@ -4,33 +4,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
+using System.Threading.Tasks;
+
 
 namespace Client
 {
-    public class AuthenticationProxy : ChannelFactory<IAuthenticationService>, IAuthenticationService, IDisposable
+    class AuthenticationProxy : ChannelFactory<IAuthenticationService>, IAuthenticationService, IDisposable
     {
         IAuthenticationService factory;
 
         public AuthenticationProxy(NetTcpBinding binding, string address) : base(binding, address)
         {
-            //Credentials.Windows.AllowNtlm = false; not usable as we dont have domain controllers.
             factory = this.CreateChannel();
         }
 
-        public AuthenticationProxy(NetTcpBinding binding, EndpointAddress address) : base(binding, address)
+        public int CheckIn(string username)
         {
-            //Credentials.Windows.AllowNtlm = false; not usable as we dont have domain controllers.
-            factory = this.CreateChannel();
+            return factory.CheckIn(username);
         }
 
-        public void Login(string username, string password)
+        public int Login(string username, string password)
         {
-            factory.Login(username, password);
+            return factory.Login(username, password);
         }
 
-        public void Logout()
+        public int Logout(string username)
         {
-            factory.Logout();
+            return factory.Logout(username);
         }
     }
 }

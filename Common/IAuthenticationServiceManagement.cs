@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Common
 {
@@ -10,12 +11,10 @@ namespace Common
     public interface IAuthenticationServiceManagement
     {
         [OperationContract]
-        void LockAccount(string username);
-
+        int ValidateCredentials(byte[] username, byte[] password, byte[] signature);
         [OperationContract]
-        void EnableAccount(string username);
-
+        int ResetUserOnLogOut(byte[] username, byte[] signature);
         [OperationContract]
-        void DisableAccount(string username);
+        int CheckIn(byte[] username, byte[] signature);
     }
 }

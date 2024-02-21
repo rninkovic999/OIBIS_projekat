@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Common
+namespace Common.Groups
 {
-    public class Groups
+   public class Groups
     {
-        public static string generalUser = "AccountUsers";
-        public static string adminUser = "AccountAdmins";
+
+        private static string generalUser = "AccountUsers";
+        private static string adminUser = "AccountAdmins";
+
+        public static string GeneralUser { get => generalUser; set => generalUser = value; }
+        public static string AdminUser { get => adminUser; set => adminUser = value; }
     }
 }

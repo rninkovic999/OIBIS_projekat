@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4C6E635-A017-466D-B960-4229E6443906}</ProjectGuid>
+    <ProjectGuid>{D0CA42C4-EE0B-4FD8-8AA6-FA9D3772D467}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Common</RootNamespace>
     <AssemblyName>Common</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -39,18 +39,36 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Certificates\CertificateFormatter.cs" />
     <Compile Include="Certificates\CertificateManager.cs" />
-    <Compile Include="Exceptions\InvalidGroupException.cs" />
+    <Compile Include="Config\ConfigurationManager.cs" />
+    <Compile Include="Cryptography\AES.cs" />
+    <Compile Include="Cryptography\SecretKey.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="DigitalSignatures\DigitalSignatureFormatter.cs" />
+    <Compile Include="DigitalSignatures\DigitalSignatureHelpperFunctions.cs" />
+    <Compile Include="DigitalSignatures\DigitalSignatureManager.cs" />
+    <Compile Include="Exception\InvalidGroupException.cs" />
+    <Compile Include="Exception\InvalidUserException.cs" />
     <Compile Include="Groups\Groups.cs" />
     <Compile Include="IAccountManagement.cs" />
     <Compile Include="IAuthenticationService.cs" />
     <Compile Include="IAuthenticationServiceManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Certificates\AuthenticationService.cer" />
+    <None Include="Certificates\AuthenticationService.pfx" />
+    <None Include="Certificates\AuthenticationService.pvk" />
+    <None Include="Certificates\CredentialsStore.cer" />
+    <None Include="Certificates\CredentialsStore.pfx" />
+    <None Include="Certificates\CredentialsStore.pvk" />
+    <None Include="Certificates\ProjekatCA.cer" />
+    <None Include="Certificates\ProjekatCA.pvk" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

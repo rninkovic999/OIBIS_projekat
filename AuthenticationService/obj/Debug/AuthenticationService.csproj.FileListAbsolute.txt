@@ -1,0 +1,41 @@
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\bin\Debug\AuthenticationService.exe.config
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\bin\Debug\AuthenticationService.exe
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\bin\Debug\AuthenticationService.pdb
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\bin\Debug\Common.dll
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\bin\Debug\Common.pdb
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.AssemblyReference.cache
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.CoreCompileInputs.cache
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.CopyComplete
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.exe
+C:\Users\danij\OneDrive\Radna površina\SBES\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.pdb
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\bin\Debug\AuthenticationService.exe.config
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\bin\Debug\AuthenticationService.exe
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\bin\Debug\AuthenticationService.pdb
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\bin\Debug\Common.dll
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\bin\Debug\Common.pdb
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.CopyComplete
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.exe
+C:\Users\User\Desktop\SBES-Projekat\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.pdb
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\bin\Debug\AuthenticationService.exe.config
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\bin\Debug\AuthenticationService.exe
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\bin\Debug\AuthenticationService.pdb
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\bin\Debug\Common.dll
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\bin\Debug\Common.pdb
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.csprojAssemblyReference.cache
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.CoreCompileInputs.cache
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.CopyComplete
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.exe
+C:\Users\ZBOOK\Desktop\SBES_Project\SBES_Projekat21\Project\AuthenticationService\obj\Debug\AuthenticationService.pdb
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.AssemblyReference.cache
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.SuggestedBindingRedirects.cache
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.CoreCompileInputs.cache
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\obj\Debug\AuthenticationService.exe
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\obj\Debug\AuthenticationService.pdb
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\bin\Debug\AuthenticationService.exe.config
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\bin\Debug\AuthenticationService.exe
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\bin\Debug\AuthenticationService.pdb
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\bin\Debug\Common.dll
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\bin\Debug\Common.pdb
+C:\Users\risto\Desktop\noviSBES\SBES-Projekat-main\SBES_Projekat21-main\Project\AuthenticationService\obj\Debug\AuthenticationService.csproj.CopyComplete

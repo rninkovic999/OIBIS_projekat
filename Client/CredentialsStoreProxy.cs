@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
+using System.Threading.Tasks;
+
 
 namespace Client
 {
@@ -12,11 +14,6 @@ namespace Client
         IAccountManagement factory;
 
         public CredentialsStoreProxy(NetTcpBinding binding, string address) : base(binding, address)
-        {
-            factory = this.CreateChannel();
-        }
-
-        public CredentialsStoreProxy(NetTcpBinding binding, EndpointAddress address) : base(binding, address)
         {
             factory = this.CreateChannel();
         }
